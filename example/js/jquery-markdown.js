@@ -136,15 +136,15 @@ $.fn.mdLink = function(options) {
     }, options);
     $(this).textReplace({
         selected: function(text) {
-            if(settings.default_url !== ""){
+            if(settings.default_url !== null && settings.default_url !== "" && settings.default_url !== false){
                 return '[' + text + '](' + settings.default_url + ')';
             }else{
                 return false;
             }
         },
         no_selection: function() {
-            if(settings.default_url !== ""){
-                  return '[' + settings.default_text + '](' + settings.default_url + ')';
+            if(settings.default_url !== null && settings.default_url !== "" && settings.default_url !== false){
+                return '[' + settings.default_text + '](' + settings.default_url + ')';
             }else{
                 return false;
             }
@@ -158,14 +158,14 @@ $.fn.mdImage = function(options) {
     }, options);
     $(this).textReplace({
         selected: function(image_alt_text) {
-            if(settings.default_image_url !== ""){
+            if(settings.default_image_url !== null && settings.default_image_url !== "" && settings.default_image_url !== false){
               return '![' + image_alt_text + '](' + settings.default_image_url + ')';
             }else{
               return false;
             }
         },
         no_selection: function() {
-            if(settings.default_image_url !== ""){
+            if(settings.default_image_url !== null && settings.default_image_url !== "" && settings.default_image_url !== false){
                 return '![' + settings.default_alt_text + '](' + settings.default_image_url + ')';
             }else{
                 return false;
