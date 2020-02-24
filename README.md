@@ -1,3 +1,11 @@
+原项目地址：https://github.com/cangelis/jquery-markdown/
+
+做了点小修改，未选中内容点击按钮时将内容插入至光标处，取消插入图片与链接或填写数据为空时不会插入数据，未选中数据插入列表时换行插入，按钮使用了Font awesome
+
+![截图](https://images.gitee.com/uploads/images/2020/0224/224913_64014c10_1356968.png "TIM截图20200224224858.png")
+
+原Readme：
+
 # jquery-markdown
 
 ## About
