@@ -38,6 +38,20 @@ $(document).ready(function(){
   $("#md-bulletList").click(function () {
     textarea.mdBulletList();
   });
+  $("#md-build").click(function () {
+    if($("#md-build-i").attr("class") == "fa fa-eye"){
+      textarea.hide();
+      $("#md-build-div").show();
+      $("#md-build-i").attr("class", "fa fa-eye-slash");
+      var parser = new HyperDown;
+      buildHtml = parser.makeHtml(textarea.val());
+      $("#md-build-div").html(buildHtml);
+    }else{
+      $("#md-build-div").hide();
+      textarea.show();
+      $("#md-build-i").attr("class", "fa fa-eye");
+    }
+  });
 });
 
 

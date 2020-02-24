@@ -1,107 +1,13 @@
-原项目地址：https://github.com/cangelis/jquery-markdown/
+##修改内容：
 
-做了点小修改，未选中内容点击按钮时将内容插入至光标处，取消插入图片与链接或填写数据为空时不会插入数据，未选中数据插入列表时换行插入，按钮使用了Font awesome
+1. 增加实时预览功能(解析结果样式待完善)
+2. 未选中内容时 点击功能按钮 将内容插入至光标处
+3. 取消插入图片/链接 或填写数据为空时不会插入数据
+4. 未选中数据 点击插入列表时 换行插入
+5. 按钮使用了Font awesome
 
-![截图](https://images.gitee.com/uploads/images/2020/0224/224913_64014c10_1356968.png "TIM截图20200224224858.png")
+原项目地址：[cangelis/jquery-markdown](https://github.com/cangelis/jquery-markdown/)
+实时解析使用的开源项目：[HyperDown.js](https://github.com/SegmentFault/HyperDown.js)
 
-原Readme：
-
-# jquery-markdown
-
-## About
-
-jQuery Markdown provides necessary wrapper functions for a markdown editor so anybody can create his/her own markdown editor using this plugin.
-
-## Example
-
-Example is attached with the source code under `example` folder, or you can check out the [demo](http://www.cangelis.com/jquery-markdown/demo)
-
-## Documentation
-
-**Note:** All the parameters defined here are **optional**.
-
-### Bold
-
-    $(editor).mdBold({
-        default: "Text Here"
-    });
-
-`default` represents the text that will be wrapped when no text is selected in the `textarea`.
-
-### Italic
-
-    $(editor).mdItalic({
-        default: "Text Here"
-    });
-
-### Header
-
-    $(editor).mdHeader({
-        default: "Heading Text",
-        number: 1
-    });
-
-`number` represents the header size. For example: 1 -> `# Heading Text`, 2 -> `## Heading Text`
-
-### Code
-
-    $(editor).mdCode({
-        default: "Code here"
-    });
-
-### Quote
-
-    $(editor).mdQuote({
-        default: "Quote here"
-    });
-
-### Link
-
-    $(editor).mdLink({
-        default_text: "Link Text Here",
-        default_url: prompt('Enter URL please')
-    });
-
-### Image
-
-    $(editor).mdImage({
-        default_alt_text: "",
-        default_image_url: prompt('Enter Image URL please'),
-        default_image_title: ""
-    });
-
-### Numbered List
-
-    $(editor).mdNumberedList({
-        default: "List Item"
-    });
-
-### Bullet List
-
-    $(editor).mdBulletList({
-        default: "List Item"
-    });
-
-## Licence
-
-    The MIT License (MIT)
-
-    Copyright (c) 2013 Can Geliş
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in
-    all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    THE SOFTWARE.
+[截图1](https://cwlog.net/usr/uploads/2020/02/4082342673.png)
+[截图2](https://cwlog.net/usr/uploads/2020/02/765737489.png)
