@@ -21,13 +21,16 @@ $(document).ready(function(){
     textarea.mdHeader({number: 4});
   });
   $("#md-link").click(function () {
-    textarea.mdLink();
+    if($("#md-build-i").attr("class") == "fa fa-eye") textarea.mdLink();
   });
   $("#md-image").click(function () {
-    textarea.mdImage();
+    if($("#md-build-i").attr("class") == "fa fa-eye") textarea.mdImage();
   });
   $("#md-code").click(function () {
     textarea.mdCode();
+  });
+  $("#md-hr").click(function () {
+    textarea.mdHr();
   });
   $("#md-quote").click(function () {
     textarea.mdQuote();
@@ -58,6 +61,7 @@ $(document).ready(function(){
 $.fn.extend({
     insertValue: function(insertValue) {
         if(insertValue == false) return null;
+        if($("#md-build-i").attr("class") == "fa fa-eye-slash") return null;
         var $t = $(this)[0];
         if ($t.selectionStart || $t.selectionStart == "0") {
             var startPos = $t.selectionStart;
@@ -206,6 +210,19 @@ $.fn.mdCode = function(options) {
         },
         no_selection: function() {
             return '`' + settings.default + '`';
+        }
+    });
+};
+$.fn.mdHr = function(options) {
+    var settings = $.extend({
+        default: ""
+    }, options);
+    $(this).textReplace({
+        selected: function(text) {
+            return text + "\n\n----------\n\n";
+        },
+        no_selection: function() {
+            return "\n\n----------\n\n";
         }
     });
 };
