@@ -9,5 +9,5 @@
 原项目地址：[cangelis/jquery-markdown](https://github.com/cangelis/jquery-markdown/)
 实时解析使用的开源项目：[HyperDown.js](https://github.com/SegmentFault/HyperDown.js)
 
-![截图1](https://cwlog.net/usr/uploads/2020/03/2217948719.png)
+![截图1](https://cwlog.net/usr/uploads/2020/03/609008809.png)
 ![截图2](https://cwlog.net/usr/uploads/2020/03/3519668735.png)
