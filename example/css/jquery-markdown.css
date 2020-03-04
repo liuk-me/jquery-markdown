@@ -24,7 +24,7 @@ body {
 }
 
 #md-editor, #md-build-div {
-  width: 100%;
+  width: 98%;
   height: 310px;
   font-size: 15px;
   padding: 5px 1%;
@@ -33,4 +33,80 @@ body {
 
 #md-build-div {
   display: none;
+  overflow: scroll;
+  line-height: 23px;
+}
+
+#md-build-div h1,h2,h3,h4,p,hr,ol,ul,img,pre,blockquote {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+#md-build-div hr {
+  width: 100%;
+  border: 0.5px solid #D9D9D6;
+}
+
+#md-build-div h1 {
+  font-size: 24px;
+}
+
+#md-build-div h2 {
+  font-size: 22px;
+}
+
+#md-build-div h3 {
+  font-size: 20px;
+}
+
+#md-build-div h4 {
+  font-size: 18px;
+}
+
+#md-build-div ol {
+  list-style-type: decimal;
+  padding-inline-start: 40px;
+}
+
+#md-build-div ol li{
+  list-style: decimal;
+}
+
+#md-build-div ul {
+  list-style-type: disc;
+  padding-inline-start: 40px;
+}
+
+#md-build-div ul li{
+  list-style: disc;
+}
+
+#md-build-div code {
+  background: rgb(235,235,235);
+  padding: 3px 3px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #B94A48;
+}
+
+#md-build-div pre {
+  background: rgb(235,235,235);
+  padding: 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+#md-build-div pre code {
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#md-build-div blockquote {
+  margin-left: 5px;
+  padding-left: 16px;
+  border-left: 4px solid #E9E9E6;
+  color: #777;
 }
