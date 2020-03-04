@@ -6,7 +6,7 @@ $(document).ready(function(){
     textarea.mdBold();
   });
   $("#md-italic").click(function () {
-    textarea.mdBold();
+    textarea.mdItalic();
   });
   $("#md-h1").click(function () {
     textarea.mdHeader({number: 1});
